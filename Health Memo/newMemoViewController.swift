@@ -34,7 +34,7 @@ class newMemoViewController: UIViewController {
     
     @IBAction func onSubmit(_ sender: Any) {
         let newMemo = PFObject(className:"NewMemo")
-        newMemo["owner"] = "Pawan"
+        newMemo["owner"] = PFUser.current()
         
         let formatter = DateFormatter()
         formatter.dateStyle = .short

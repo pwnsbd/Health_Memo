@@ -50,7 +50,7 @@ class MemosViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.dayRating.image = UIImage(named: "regular_" + rating)
         cell.questionLabel.text = "How are you feeling today?"
-        cell.answerLabel.text = memoCount["SecondAnswer"] as! String
+        cell.answerLabel.text = memoCount["SecondAnswer"] as? String
         cell.dateLabel.text = memoCount["date"] as! String
         return cell
     }
@@ -58,6 +58,21 @@ class MemosViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBAction func onLogOut(_ sender: Any) {
         UserDefaults.standard.set(false, forKey: "userLoggedIn")
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if (segue.identifier == "detailedSegue")
+        {
+            let cell = sender as! UITableViewCell
+            let index = tableView.indexPath(for: cell)!
+            
+            let memo = memos[index.row]
+            let memoDetailView = segue.destination as! Memo_detailedViewController
+            memoDetailView.Memo = memo
+            tableView.deselectRow(at: index, animated: true)
+        }
+        
     }
     
     /*

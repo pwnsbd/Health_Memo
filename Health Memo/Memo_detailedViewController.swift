@@ -6,19 +6,31 @@
 //
 
 import UIKit
+import Parse
 
 class Memo_detailedViewController: UIViewController {
-
+    
+    var Memo : PFObject?
+    
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var firstQuesLabel: UILabel!
     @IBOutlet weak var secondQuesLabel: UILabel!
+    @IBOutlet weak var rating: UIImageView!
     @IBOutlet weak var thirdQuesLabel: UILabel!
-    @IBOutlet weak var firstAnsLabel: UILabel!
-    @IBOutlet weak var secondAnsLabel: UILabel!
-    @IBOutlet weak var thirdAnsLabel: UILabel!
     
+    @IBOutlet weak var SecondAnswer: UILabel!
     
+    @IBOutlet weak var ThirdAnswer: UILabel!
+    
+    @IBOutlet weak var FourtAnswer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let dayRating = Memo?["dayRating"] as? String
+        dateLabel.text = Memo?["date"] as? String
+        rating.image = UIImage(named: "regular_" + dayRating!)
+        SecondAnswer.text = Memo?["SecondAnswer"] as? String
+        ThirdAnswer.text = Memo?["ThirdAnswer"] as? String
+        FourtAnswer.text = Memo?["FourthAnswer"] as? String
 
         // Do any additional setup after loading the view.
     }

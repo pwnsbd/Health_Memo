@@ -69,7 +69,7 @@
                                             <outlet property="dateLabel" destination="XDC-pp-OBl" id="gDQ-1Q-Zbr"/>
                                             <outlet property="dayRating" destination="Lwr-iR-Ns6" id="jVk-s0-v3K"/>
                                             <outlet property="questionLabel" destination="gLR-vb-Al1" id="bpw-T0-ihl"/>
-                                            <segue destination="jjc-BI-nin" kind="show" id="f4F-b9-mgs"/>
+                                            <segue destination="jjc-BI-nin" kind="show" identifier="detailedSegue" id="f4F-b9-mgs"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -84,10 +84,9 @@
                                 <action selector="onLogOut:" destination="TE7-zy-ySc" id="jef-nh-ypT"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="cd8-CK-hnR">
-                            <color key="tintColor" systemColor="linkColor"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="note.text.badge.plus" catalog="system" id="tGC-zR-cWg">
                             <connections>
-                                <segue destination="1lc-uY-4x6" kind="presentation" id="5do-CJ-yJY"/>
+                                <segue destination="1lc-uY-4x6" kind="modal" identifier="newMemoSegue" id="bsv-Vq-dZA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -300,56 +299,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kDn-Xt-kAN">
-                                <rect key="frame" x="286" y="111.5" width="23" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QcL-lu-Bgv">
-                                <rect key="frame" x="308" y="111.5" width="23" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zaF-IM-6tS">
-                                <rect key="frame" x="328" y="111.5" width="23" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QD8-MQ-CL3">
-                                <rect key="frame" x="350" y="111.5" width="23" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ELU-ew-cZN">
-                                <rect key="frame" x="371" y="111.5" width="23" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29p-Qr-yuz">
-                                <rect key="frame" x="27" y="111" width="36" height="21"/>
+                                <rect key="frame" x="27" y="111" width="156" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regular_0" translatesAutoresizingMaskIntoConstraints="NO" id="Net-rf-xM1">
+                                <rect key="frame" x="265" y="111" width="129" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nER-II-Yig"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="QKU-cV-pbj"/>
                     <connections>
-                        <outlet property="ThirdQuesLabel" destination="qOx-LA-7nC" id="LTc-Ay-hCb"/>
-                        <outlet property="firstAnsLabel" destination="R9v-ft-uL1" id="yq4-QB-eyJ"/>
+                        <outlet property="FourtAnswer" destination="qOx-LA-7nC" id="ekk-jY-7xZ"/>
+                        <outlet property="SecondAnswer" destination="R9v-ft-uL1" id="BFT-jI-tyC"/>
+                        <outlet property="ThirdAnswer" destination="bm8-yh-BbG" id="00b-Mo-yLV"/>
+                        <outlet property="dateLabel" destination="29p-Qr-yuz" id="vcK-ev-6le"/>
                         <outlet property="firstQuesLabel" destination="EUZ-Em-LIg" id="mfx-yn-li0"/>
-                        <outlet property="secondAnsLabel" destination="bm8-yh-BbG" id="uah-gX-WQl"/>
+                        <outlet property="rating" destination="Net-rf-xM1" id="u8G-6D-uHE"/>
                         <outlet property="secondQuesLabel" destination="o8R-Uv-Sde" id="Dnj-Zc-EnQ"/>
-                        <outlet property="thirdAnsLabel" destination="qOx-LA-7nC" id="ivC-6g-cdd"/>
                         <outlet property="thirdQuesLabel" destination="Hoo-Du-5qv" id="UvG-El-Ugb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uA1-dN-xvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-717" y="2055"/>
+            <point key="canvasLocation" x="-717.39130434782612" y="2054.4642857142858"/>
         </scene>
         <!--New Memo-->
         <scene sceneID="0X5-jd-Y0N">
@@ -469,24 +448,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="note.text.badge.plus" catalog="system" width="128" height="108"/>
         <image name="regular_0" width="102" height="18"/>
-        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
