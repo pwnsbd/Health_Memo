@@ -46,7 +46,9 @@ class MemosViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemoCell") as! MemoCell
         let memoCount = memos[indexPath.row]
-        let rating = memoCount["dayRating"] as! String
+        var rating = memoCount["dayRating"] as! String
+        
+        if rating == "Six"{rating = "3"}
         
         cell.dayRating.image = UIImage(named: "regular_" + rating)
         cell.questionLabel.text = "How are you feeling today?"
