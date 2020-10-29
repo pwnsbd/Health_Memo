@@ -25,9 +25,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>&quot;This app needs to hear you to take the dictation&quot;</string>
+	<string>"This app needs to hear you to take the dictation"</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>&quot;Needs to reconize what youa re saying to present it on text&quot;</string>
+	<string>"Needs to reconize what youa re saying to present it on text"</string>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>IntentIntent</string>
