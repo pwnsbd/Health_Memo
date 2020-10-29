@@ -509,13 +509,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What symptoms are you experiencing?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpw-zQ-5Za">
-                                <rect key="frame" x="20" y="360" width="319" height="22"/>
+                                <rect key="frame" x="20" y="380" width="319" height="22"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you feel your body temperature today was higher than it usually is?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNg-Lp-lj4">
-                                <rect key="frame" x="20" y="493" width="384" height="43"/>
+                                <rect key="frame" x="20" y="533" width="384" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -527,27 +527,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DxO-rR-6H7">
-                                <rect key="frame" x="20" y="265" width="374" height="55"/>
+                                <rect key="frame" x="20" y="265" width="374" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="wiV-Am-qWk"/>
+                                    <constraint firstAttribute="height" constant="75" id="wiV-Am-qWk"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uhs-rb-Xt6">
-                                <rect key="frame" x="20" y="398" width="374" height="55"/>
+                                <rect key="frame" x="20" y="418" width="374" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="HKH-iZ-0Pp"/>
+                                    <constraint firstAttribute="height" constant="75" id="HKH-iZ-0Pp"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W3j-w7-Sn4">
-                                <rect key="frame" x="20" y="552" width="374" height="55"/>
+                                <rect key="frame" x="20" y="592" width="374" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="XhV-0j-rX2"/>
+                                    <constraint firstAttribute="height" constant="75" id="XhV-0j-rX2"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -561,7 +561,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-hP-XHB">
-                                <rect key="frame" x="124" y="668" width="166" height="36"/>
+                                <rect key="frame" x="124" y="728" width="166" height="36"/>
                                 <color key="backgroundColor" red="0.1230235174" green="0.66591936350000003" blue="0.95572477580000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Submit">
