@@ -50,7 +50,7 @@ class MemosViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         if rating == "Six"{rating = "3"}
         
-        cell.dayRating.image = UIImage(named: "regular_" + rating)
+        cell.dayRating.image = UIImage(named: "heart_" + rating)
         cell.questionLabel.text = "What symptoms are you experiencing?"
         cell.answerLabel.text = memoCount["SecondAnswer"] as? String
         cell.dateLabel.text = memoCount["date"] as! String
