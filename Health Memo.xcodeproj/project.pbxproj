@@ -21,6 +21,12 @@
 		6C1237A725464E9500F01B39 /* Memo_detailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1237A625464E9500F01B39 /* Memo_detailedViewController.swift */; };
 		6C1237AC25465CA900F01B39 /* newMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1237AB25465CA900F01B39 /* newMemoViewController.swift */; };
 		6C20F32D2549288E0027A558 /* ScrollableDetailedMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20F32C2549288E0027A558 /* ScrollableDetailedMemoViewController.swift */; };
+		6C3A0395254A9FD4006062DA /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3A0394254A9FD4006062DA /* IntentHandler.swift */; };
+		6C3A039C254A9FD4006062DA /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3A0369254A9AA6006062DA /* IntentsUI.framework */; };
+		6C3A039F254A9FD4006062DA /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3A039E254A9FD4006062DA /* IntentViewController.swift */; };
+		6C3A03A2254A9FD4006062DA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3A03A0254A9FD4006062DA /* MainInterface.storyboard */; };
+		6C3A03A6254A9FD4006062DA /* Health_MemoUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C3A039B254A9FD4006062DA /* Health_MemoUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C3A03A9254A9FD4006062DA /* Health_Memo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C3A0392254A9FD4006062DA /* Health_Memo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6C57A456254687B3001ECC23 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C57A455254687B3001ECC23 /* LoginViewController.swift */; };
 		6C8A76B52547E2DB00F03CFD /* NextAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A76B42547E2DB00F03CFD /* NextAppointmentViewController.swift */; };
 		F16EA31FC3C39A85A089FD34 /* Pods_Health_Memo_Health_MemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29EC2D065D06977D33B39F33 /* Pods_Health_Memo_Health_MemoUITests.framework */; };
@@ -41,7 +47,36 @@
 			remoteGlobalIDString = 48F42A7F254616D800BC6078;
 			remoteInfo = "Health Memo";
 		};
+		6C3A03A4254A9FD4006062DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48F42A78254616D700BC6078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C3A039A254A9FD4006062DA;
+			remoteInfo = Health_MemoUI;
+		};
+		6C3A03A7254A9FD4006062DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48F42A78254616D700BC6078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C3A0391254A9FD4006062DA;
+			remoteInfo = Health_Memo;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C3A037E254A9AA6006062DA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C3A03A9254A9FD4006062DA /* Health_Memo.appex in Embed App Extensions */,
+				6C3A03A6254A9FD4006062DA /* Health_MemoUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		29EC2D065D06977D33B39F33 /* Pods_Health_Memo_Health_MemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health_Memo_Health_MemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +101,20 @@
 		6C1237A625464E9500F01B39 /* Memo_detailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo_detailedViewController.swift; sourceTree = "<group>"; };
 		6C1237AB25465CA900F01B39 /* newMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newMemoViewController.swift; sourceTree = "<group>"; };
 		6C20F32C2549288E0027A558 /* ScrollableDetailedMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableDetailedMemoViewController.swift; sourceTree = "<group>"; };
+		6C3A0357254A98B0006062DA /* Health Memo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Health Memo.entitlements"; sourceTree = "<group>"; };
+		6C3A0361254A9AA5006062DA /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		6C3A0363254A9AA5006062DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C3A0369254A9AA6006062DA /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		6C3A036C254A9AA6006062DA /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		6C3A036F254A9AA6006062DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6C3A0371254A9AA6006062DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C3A0392254A9FD4006062DA /* Health_Memo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Health_Memo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3A0394254A9FD4006062DA /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		6C3A0396254A9FD4006062DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C3A039B254A9FD4006062DA /* Health_MemoUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Health_MemoUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3A039E254A9FD4006062DA /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		6C3A03A1254A9FD4006062DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6C3A03A3254A9FD4006062DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C57A455254687B3001ECC23 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6C8A76B42547E2DB00F03CFD /* NextAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAppointmentViewController.swift; sourceTree = "<group>"; };
 		96527084E6601DE65AA62933 /* Pods-Health Memo-Health MemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health Memo-Health MemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Health Memo-Health MemoUITests/Pods-Health Memo-Health MemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +149,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C3A038F254A9FD4006062DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C3A0398254A9FD4006062DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3A039C254A9FD4006062DA /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -122,6 +186,7 @@
 				41E481EE76F4C1E4E454D793 /* Pods_Health_Memo.framework */,
 				29EC2D065D06977D33B39F33 /* Pods_Health_Memo_Health_MemoUITests.framework */,
 				B1D389855BBF5E082767D161 /* Pods_Health_MemoTests.framework */,
+				6C3A0369254A9AA6006062DA /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +197,10 @@
 				48F42A82254616D800BC6078 /* Health Memo */,
 				48F42A99254616D900BC6078 /* Health MemoTests */,
 				48F42AA4254616D900BC6078 /* Health MemoUITests */,
+				6C3A0360254A9AA5006062DA /* Siri */,
+				6C3A036B254A9AA6006062DA /* SiriUI */,
+				6C3A0393254A9FD4006062DA /* Health_Memo */,
+				6C3A039D254A9FD4006062DA /* Health_MemoUI */,
 				48F42A81254616D800BC6078 /* Products */,
 				2FDEC78B063BE05B4A722190 /* Pods */,
 				382F41D076AC9DCDDC5A46A7 /* Frameworks */,
@@ -144,6 +213,8 @@
 				48F42A80254616D800BC6078 /* Health Memo.app */,
 				48F42A96254616D900BC6078 /* Health MemoTests.xctest */,
 				48F42AA1254616D900BC6078 /* Health MemoUITests.xctest */,
+				6C3A0392254A9FD4006062DA /* Health_Memo.appex */,
+				6C3A039B254A9FD4006062DA /* Health_MemoUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +222,7 @@
 		48F42A82254616D800BC6078 /* Health Memo */ = {
 			isa = PBXGroup;
 			children = (
+				6C3A0357254A98B0006062DA /* Health Memo.entitlements */,
 				48F42A83254616D800BC6078 /* AppDelegate.swift */,
 				48F42A85254616D800BC6078 /* SceneDelegate.swift */,
 				48F42A89254616D800BC6078 /* Main.storyboard */,
@@ -186,6 +258,44 @@
 			path = "Health MemoUITests";
 			sourceTree = "<group>";
 		};
+		6C3A0360254A9AA5006062DA /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				6C3A0361254A9AA5006062DA /* IntentHandler.swift */,
+				6C3A0363254A9AA5006062DA /* Info.plist */,
+			);
+			path = Siri;
+			sourceTree = "<group>";
+		};
+		6C3A036B254A9AA6006062DA /* SiriUI */ = {
+			isa = PBXGroup;
+			children = (
+				6C3A036C254A9AA6006062DA /* IntentViewController.swift */,
+				6C3A036E254A9AA6006062DA /* MainInterface.storyboard */,
+				6C3A0371254A9AA6006062DA /* Info.plist */,
+			);
+			path = SiriUI;
+			sourceTree = "<group>";
+		};
+		6C3A0393254A9FD4006062DA /* Health_Memo */ = {
+			isa = PBXGroup;
+			children = (
+				6C3A0394254A9FD4006062DA /* IntentHandler.swift */,
+				6C3A0396254A9FD4006062DA /* Info.plist */,
+			);
+			path = Health_Memo;
+			sourceTree = "<group>";
+		};
+		6C3A039D254A9FD4006062DA /* Health_MemoUI */ = {
+			isa = PBXGroup;
+			children = (
+				6C3A039E254A9FD4006062DA /* IntentViewController.swift */,
+				6C3A03A0254A9FD4006062DA /* MainInterface.storyboard */,
+				6C3A03A3254A9FD4006062DA /* Info.plist */,
+			);
+			path = Health_MemoUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,10 +308,13 @@
 				48F42A7D254616D800BC6078 /* Frameworks */,
 				48F42A7E254616D800BC6078 /* Resources */,
 				17008255FB4D61B13C825267 /* [CP] Embed Pods Frameworks */,
+				6C3A037E254A9AA6006062DA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6C3A03A5254A9FD4006062DA /* PBXTargetDependency */,
+				6C3A03A8254A9FD4006062DA /* PBXTargetDependency */,
 			);
 			name = "Health Memo";
 			productName = "Health Memo";
@@ -247,6 +360,40 @@
 			productReference = 48F42AA1254616D900BC6078 /* Health MemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6C3A0391254A9FD4006062DA /* Health_Memo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C3A03AF254A9FD4006062DA /* Build configuration list for PBXNativeTarget "Health_Memo" */;
+			buildPhases = (
+				6C3A038E254A9FD4006062DA /* Sources */,
+				6C3A038F254A9FD4006062DA /* Frameworks */,
+				6C3A0390254A9FD4006062DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Health_Memo;
+			productName = Health_Memo;
+			productReference = 6C3A0392254A9FD4006062DA /* Health_Memo.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6C3A039A254A9FD4006062DA /* Health_MemoUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C3A03AE254A9FD4006062DA /* Build configuration list for PBXNativeTarget "Health_MemoUI" */;
+			buildPhases = (
+				6C3A0397254A9FD4006062DA /* Sources */,
+				6C3A0398254A9FD4006062DA /* Frameworks */,
+				6C3A0399254A9FD4006062DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Health_MemoUI;
+			productName = Health_MemoUI;
+			productReference = 6C3A039B254A9FD4006062DA /* Health_MemoUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -267,6 +414,12 @@
 						CreatedOnToolsVersion = 12.1;
 						TestTargetID = 48F42A7F254616D800BC6078;
 					};
+					6C3A0391254A9FD4006062DA = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					6C3A039A254A9FD4006062DA = {
+						CreatedOnToolsVersion = 12.1;
+					};
 				};
 			};
 			buildConfigurationList = 48F42A7B254616D700BC6078 /* Build configuration list for PBXProject "Health Memo" */;
@@ -285,6 +438,8 @@
 				48F42A7F254616D800BC6078 /* Health Memo */,
 				48F42A95254616D900BC6078 /* Health MemoTests */,
 				48F42AA0254616D900BC6078 /* Health MemoUITests */,
+				6C3A0391254A9FD4006062DA /* Health_Memo */,
+				6C3A039A254A9FD4006062DA /* Health_MemoUI */,
 			);
 		};
 /* End PBXProject section */
@@ -311,6 +466,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C3A0390254A9FD4006062DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C3A0399254A9FD4006062DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3A03A2254A9FD4006062DA /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +622,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C3A038E254A9FD4006062DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3A0395254A9FD4006062DA /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C3A0397254A9FD4006062DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3A039F254A9FD4006062DA /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -464,6 +650,16 @@
 			isa = PBXTargetDependency;
 			target = 48F42A7F254616D800BC6078 /* Health Memo */;
 			targetProxy = 48F42AA2254616D900BC6078 /* PBXContainerItemProxy */;
+		};
+		6C3A03A5254A9FD4006062DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C3A039A254A9FD4006062DA /* Health_MemoUI */;
+			targetProxy = 6C3A03A4254A9FD4006062DA /* PBXContainerItemProxy */;
+		};
+		6C3A03A8254A9FD4006062DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C3A0391254A9FD4006062DA /* Health_Memo */;
+			targetProxy = 6C3A03A7254A9FD4006062DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -482,6 +678,22 @@
 				48F42A8F254616D800BC6078 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6C3A036E254A9AA6006062DA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C3A036F254A9AA6006062DA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		6C3A03A0254A9FD4006062DA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C3A03A1254A9FD4006062DA /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -607,8 +819,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98D41530733293E73B13076E /* Pods-Health Memo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Health Memo/Health Memo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G9293FBQG;
 				INFOPLIST_FILE = "Health Memo/Info.plist";
@@ -627,8 +841,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96A48B3894C1934B6B518F62 /* Pods-Health Memo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Health Memo/Health Memo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G9293FBQG;
 				INFOPLIST_FILE = "Health Memo/Info.plist";
@@ -731,6 +947,82 @@
 			};
 			name = Release;
 		};
+		6C3A03AA254A9FD4006062DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G9293FBQG;
+				INFOPLIST_FILE = Health_Memo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hotmail.tahaafzal5.Health-Memo.Health-Memo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C3A03AB254A9FD4006062DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G9293FBQG;
+				INFOPLIST_FILE = Health_Memo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hotmail.tahaafzal5.Health-Memo.Health-Memo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6C3A03AC254A9FD4006062DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G9293FBQG;
+				INFOPLIST_FILE = Health_MemoUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hotmail.tahaafzal5.Health-Memo.Health-MemoUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C3A03AD254A9FD4006062DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G9293FBQG;
+				INFOPLIST_FILE = Health_MemoUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hotmail.tahaafzal5.Health-Memo.Health-MemoUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -766,6 +1058,24 @@
 			buildConfigurations = (
 				48F42AB1254616D900BC6078 /* Debug */,
 				48F42AB2254616D900BC6078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C3A03AE254A9FD4006062DA /* Build configuration list for PBXNativeTarget "Health_MemoUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C3A03AC254A9FD4006062DA /* Debug */,
+				6C3A03AD254A9FD4006062DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C3A03AF254A9FD4006062DA /* Build configuration list for PBXNativeTarget "Health_Memo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C3A03AA254A9FD4006062DA /* Debug */,
+				6C3A03AB254A9FD4006062DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
