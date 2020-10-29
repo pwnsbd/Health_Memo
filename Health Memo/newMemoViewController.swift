@@ -13,12 +13,12 @@ class newMemoViewController: UIViewController {
     @IBOutlet weak var newMemoFirstQueLabel: UILabel!
     @IBOutlet weak var newMemoSecondQueLabel: UILabel!
     @IBOutlet weak var newMemoThirdQueLabel: UILabel!
-    @IBOutlet weak var newMemoFourthQueLabel: UILabel!
+    
     
     @IBOutlet weak var newMemoFirstAnsLabel: UITextField!
     @IBOutlet weak var newMemoSecondAnsLabel: UITextField!
     @IBOutlet weak var newMemoThirdAnsLabel: UITextField!
-    @IBOutlet weak var newMemoFourthAnsLabel: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class newMemoViewController: UIViewController {
         newMemo["dayRating"] = newMemoFirstAnsLabel.text
         newMemo["SecondAnswer"] = newMemoSecondAnsLabel.text
         newMemo["ThirdAnswer"] = newMemoThirdAnsLabel.text
-        newMemo["FourthAnswer"] = newMemoFourthAnsLabel.text
+        
         
         newMemo.saveInBackground { (success, error) in
             if (success)
