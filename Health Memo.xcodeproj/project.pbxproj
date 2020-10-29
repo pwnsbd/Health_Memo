@@ -79,12 +79,7 @@
 		6C1237A625464E9500F01B39 /* Memo_detailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo_detailedViewController.swift; sourceTree = "<group>"; };
 		6C1237AB25465CA900F01B39 /* newMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newMemoViewController.swift; sourceTree = "<group>"; };
 		6C20F32C2549288E0027A558 /* ScrollableDetailedMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableDetailedMemoViewController.swift; sourceTree = "<group>"; };
-		6C3A0361254A9AA5006062DA /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		6C3A0363254A9AA5006062DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C3A0369254A9AA6006062DA /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		6C3A036C254A9AA6006062DA /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		6C3A036F254A9AA6006062DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		6C3A0371254A9AA6006062DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C3A0394254A9FD4006062DA /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		6C3A0396254A9FD4006062DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C3A039E254A9FD4006062DA /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
@@ -157,8 +152,6 @@
 				48F42A82254616D800BC6078 /* Health Memo */,
 				48F42A99254616D900BC6078 /* Health MemoTests */,
 				48F42AA4254616D900BC6078 /* Health MemoUITests */,
-				6C3A0360254A9AA5006062DA /* Siri */,
-				6C3A036B254A9AA6006062DA /* SiriUI */,
 				6C3A0393254A9FD4006062DA /* Health_Memo */,
 				6C3A039D254A9FD4006062DA /* Health_MemoUI */,
 				48F42A81254616D800BC6078 /* Products */,
@@ -213,25 +206,6 @@
 				48F42AA7254616D900BC6078 /* Info.plist */,
 			);
 			path = "Health MemoUITests";
-			sourceTree = "<group>";
-		};
-		6C3A0360254A9AA5006062DA /* Siri */ = {
-			isa = PBXGroup;
-			children = (
-				6C3A0361254A9AA5006062DA /* IntentHandler.swift */,
-				6C3A0363254A9AA5006062DA /* Info.plist */,
-			);
-			path = Siri;
-			sourceTree = "<group>";
-		};
-		6C3A036B254A9AA6006062DA /* SiriUI */ = {
-			isa = PBXGroup;
-			children = (
-				6C3A036C254A9AA6006062DA /* IntentViewController.swift */,
-				6C3A036E254A9AA6006062DA /* MainInterface.storyboard */,
-				6C3A0371254A9AA6006062DA /* Info.plist */,
-			);
-			path = SiriUI;
 			sourceTree = "<group>";
 		};
 		6C3A0393254A9FD4006062DA /* Health_Memo */ = {
@@ -550,14 +524,6 @@
 				48F42A8F254616D800BC6078 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		6C3A036E254A9AA6006062DA /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C3A036F254A9AA6006062DA /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		6C3A03A0254A9FD4006062DA /* MainInterface.storyboard */ = {
