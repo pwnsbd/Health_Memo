@@ -1,7 +1,8 @@
 # Health_Memo
-## Inspiration
 
 Youtube Link : https://www.youtube.com/watch?v=ejEnw2kL1jw&t=7s
+
+## Inspiration
 
 Sanford HealthHack 2020 inspired us to identify a problem in health care that millions face around the world - a dreadful user experience when sharing regular updates with your primary care provider. We wanted to take existing technologies and seamlessly integrate them to create a robust, user-friendly, and convenient way to keep track of your health. This is especially helpful for the elderly and people with one or more chronic diseases.
 
